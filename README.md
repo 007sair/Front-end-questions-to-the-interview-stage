@@ -1,5 +1,5 @@
-##说说你对闭包的理解
-##Talk about your understanding of closures
+## 说说你对闭包的理解
+## Talk about your understanding of closures
 
 使用闭包主要是为了设计私有的方法和变量。闭包的优点是可以避免全局变量的污染，缺点是闭包会常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。
 
@@ -47,8 +47,8 @@ IE 提供了一种存储可以持久化用户数据，叫做`userdata`，从`IE5
 IE can provide a way to store persistent user data, called UserData , from IE5.0 has supported. Each data up to 128K, under each domain up to 1M. The persistent data in the cache, if not cleaned the cache, it will always exist.
 
 
-###优点：极高的扩展性和可用性
-###Advantages: high scalability and availability
+### 优点：极高的扩展性和可用性
+### Advantages: high scalability and availability
 
     1.通过良好的编程，控制保存在cookie中的session对象的大小。
     2.通过加密和安全传输技术（SSL），减少cookie被破解的可能性。
@@ -60,8 +60,8 @@ IE can provide a way to store persistent user data, called UserData , from IE5.0
     3. Only non-sensitive data is stored in a cookie, even if stolen will not have significant losses. 
     4. Control cookie lifetime, so it will not always be effective. Theft are likely to get an expired cookie.
 
-###缺点：
-###Disadvantages:
+### 缺点：
+### Disadvantages:
 
     1.`Cookie`数量和长度的限制。每个domain最多只能有20条cookie，每个cookie长度不能超过4KB，否则会被截掉。
     
@@ -94,8 +94,8 @@ sessionStorage data stored locally for a session (session) in which the data onl
 
 And localStorage for persistent local storage, unless the initiative to remove the data, or the data is never out of date.
 
-###web storage和cookie的区别
-###the difference between web storage and a cookie
+### web storage和cookie的区别
+### the difference between web storage and a cookie
 
 
 `Web Storage`的概念和`cookie`相似，区别是它是为了更大容量存储设计的。`Cookie`的大小是受限的，并且每次你请求一个新的页面的时候`Cookie`都会被发送过去，这样无形中浪费了带宽，另外`cookie`还需要指定作用域，不可以跨域调用。
@@ -118,8 +118,8 @@ Browser support in addition to IE7 and below are not supported, other standard b
 
 localStorage and sessionStorage have the same method of operation, for example setItem, getItem and removeItem etc.
 
-###cookie 和session 的区别：
-###cookie and session distinction:
+### cookie 和session 的区别：
+### cookie and session distinction:
  
      1、cookie数据存放在客户的浏览器上，session数据放在服务器上。
      2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗
@@ -142,8 +142,8 @@ CSS 相关问题
 CSS-related issues
 --------
 
-###display:none和visibility:hidden的区别？
-###display: none and visibility: hidden difference?
+### display:none和visibility:hidden的区别？
+### display: none and visibility: hidden difference?
  
 
     display:none  隐藏对应的元素，在文档布局中不再给它分配空间，它各边的元素会合拢，
@@ -155,8 +155,8 @@ CSS-related issues
 
     visibility: hidden hides the corresponding elements, but still retain the original layout of the space in the document. The difference in the link andimport CSS is?
 
-###CSS中 link 和@import 的区别是？
-###The difference in the link andimport CSS is?
+### CSS中 link 和@import 的区别是？
+### The difference in the link andimport CSS is?
  
 
     (1) link属于HTML标签，而@import是CSS提供的; 
@@ -169,8 +169,8 @@ CSS-related issues
     (3) Import only to recognize in IE5 or more, while link is HTML tag, no compatibility issues; style right 
     (4) linkimport way of weight above the weight of heavy. Similarities and Differences between absolute and float attributes: position
     
-###position:absolute和float属性的异同  
-###Similarities and Differences between absolute and float attributes: position
+### position:absolute和float属性的异同  
+### Similarities and Differences between absolute and float attributes: position
     
     A：共同点：
     对内联元素设置`float`和`absolute`属性，可以让元素脱离文档流，并且可以设置其宽高。
@@ -184,8 +184,8 @@ CSS-related issues
     B: Different point: 
     float will still occupy the position, position overrides other elements in the document flow.
 
-###介绍一下box-sizing属性？
-###Introduce the box-sizing property?
+### 介绍一下box-sizing属性？
+### Introduce the box-sizing property?
 
 `box-sizing`属性主要用来控制元素的盒模型的解析模式。默认值是`content-box`。
  box-sizing property is primarily used to control element analytical model box model. The default value is content-Box.
@@ -202,8 +202,8 @@ CSS-related issues
 Under standard browser, according to W3C box model specification analysis, once the border or modify the elements within distance, it will affect the size of the box element, you have to recalculate the box the size of the elements, thus affecting the layout of the entire page.
 
 
-###CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
-###CSS selectors are there? Which attributes can be inherited? Priority algorithm calculated? Added CSS3 pseudo-classes are those?
+### CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
+### CSS selectors are there? Which attributes can be inherited? Priority algorithm calculated? Added CSS3 pseudo-classes are those?
 
    
     1.id选择器（ # myid）
@@ -263,8 +263,8 @@ Priority:
     :checked        单选框或复选框被选中。
  
 
-###position的值， relative和absolute分别是相对于谁进行定位的？
-###position values, relative and absolute are positioned with respect to whom?
+### position的值， relative和absolute分别是相对于谁进行定位的？
+### position values, relative and absolute are positioned with respect to whom?
     absolute 
             生成绝对定位的元素， 相对于最近一级的 定位不是 static 的父元素来进行定位。
 
@@ -287,8 +287,8 @@ Priority:
 
     static default. No positioning element occurs in the normal stream
 
-###CSS3有哪些新特性？
-###CSS3 What's new?
+### CSS3有哪些新特性？
+### CSS3 What's new?
 
     CSS3实现圆角（border-radius），阴影（box-shadow），
     对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）
@@ -306,8 +306,8 @@ Priority:
     Media queries , multi-column layout 
     border-image
       
-###XML和JSON的区别？
-###XML and JSON difference?
+### XML和JSON的区别？
+### XML and JSON difference?
 
 
     (1).数据体积方面。
@@ -330,16 +330,16 @@ Priority:
 
 
 
-###对BFC规范的理解？
-###BFC norms of understanding?
+### 对BFC规范的理解？
+### BFC norms of understanding?
           BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
         （W3C CSS 2.1 规范中的一个概念，它决定了元素如何对其内容进行布局，以及与其他元素的关系和相互作用。）
         BFC, block-level formatting context, a BFC created a new box is an independent layout, style, child elements inside the box will not affect the outside elements. In the same BFC two adjoining block-level box in the vertical direction (the direction of a relationship and layout) of margin will collapse from happening. 
         (A concept W3C CSS 2.1 specification, which determines how the elements in the layout of its contents, and its relationship with other elements and interactions.)
 
 
-###解释下 CSS sprites，以及你要如何在页面或网站中使用它。
-###Talk about your understanding of the semantic?
+### 解释下 CSS sprites，以及你要如何在页面或网站中使用它。
+### Talk about your understanding of the semantic?
 
     CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的“background-image”，“background- repeat”，“background-position”的组合进行背景定位，background-position可以用数字能精确的定位出背景图片的位置。这样可以减少很多图片请求的开销，因为请求耗时比较长；请求虽然可以并发，但是也有限制，一般浏览器都是6个。对于未来而言，就不需要这样做了，因为有了`http2`。
     CSS Sprites in fact, the number of pages in the background image into an image file, and then use the CSS "background-image", "background- repeat", "background-position" a combination of background positioning, background-position can be used Digital can accurately locate the position of the background image. This can reduce the cost of many pictures request because the request takes a relatively long; although requests can be complicated, but there are limits, are six general browser. For the future, there is no need to do so, and because of `http2`.
@@ -352,8 +352,8 @@ html部分
 html part
 ------
 
-###说说你对语义化的理解？
-###Talk about your understanding of the semantic?
+### 说说你对语义化的理解？
+### Talk about your understanding of the semantic?
 
     1，去掉或者丢失样式的时候能够让页面呈现出清晰的结构
     2，有利于SEO：和搜索引擎建立良好沟通，有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；
@@ -364,8 +364,8 @@ html part
     2, is conducive to SEO: search engines and to establish good communication helps crawlers to crawl more useful information: reptiles rely on labels to determine the context and the individual right keyword weight; 
     3, easy to resolve other devices (such as a screen reader, blind readers, mobile devices) in meaningful ways to render web pages;     4, easy to team development and maintenance, more readable semantic, is under Important Trends step right of the page, follow the W3C standards team follow this standard, the difference can be reduced.
     
-###Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?  
-###Doctype role? Strict mode and mixed mode how to distinguish? They mean?
+### Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?  
+### Doctype role? Strict mode and mixed mode how to distinguish? They mean?
 
     （1）、<!DOCTYPE> 声明位于文档中的最前面，处于 <html> 标签之前。告知浏览器以何种模式来渲染文档。 
     
@@ -383,8 +383,8 @@ html part
 
     (4), DOCTYPE does not exist or incorrectly formatted document will lead to promiscuous mode rendering.   
 
-###你知道多少种Doctype文档类型？
-###Do you know how many document types Doctype?
+### 你知道多少种Doctype文档类型？
+### Do you know how many document types Doctype?
 
      该标签可声明三种 DTD 类型，分别表示严格版本、过渡版本以及基于框架的 HTML 文档。
      HTML 4.01 规定了三种文档类型：Strict、Transitional 以及 Frameset。
@@ -518,8 +518,8 @@ Solution, to develop good coding habits, while using margin-top or while using m
 
 
     
-###解释下浮动和它的工作原理？清除浮动的技巧
-###Floating and explain how it works? Clear float tips
+### 解释下浮动和它的工作原理？清除浮动的技巧
+### Floating and explain how it works? Clear float tips
 
     浮动元素脱离文档流，不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。
     Floating elements from the document flow, does not occupy space. Floats across the border to stay its borders contain or floating elements. 
@@ -535,8 +535,8 @@ Solution, to develop good coding habits, while using margin-top or while using m
     2. Use the overflow. To a parent tag contains floating elements add css property overflow: auto; zoom: 1; zoom: 1 for compatibility with IE6. 
     3. Use after pseudo remove floating objects. This method applies only to non-IE browsers. Specific wording may refer to the following examples. Use should pay attention to the following points. First, the method must be set to clear the height of the floating element's pseudo-objects: 0, otherwise the element will be much higher than the actual number of pixels;
 
-###浮动元素引起的问题和解决办法？
-###Problems caused by floating elements and solutions?
+### 浮动元素引起的问题和解决办法？
+### Problems caused by floating elements and solutions?
 
     浮动元素引起的问题：
     
@@ -583,15 +583,15 @@ Clear float several ways:
     3, floating external element 
     4, is set to `hidden`` overflow` or auto
 
-###IE 8以下版本的浏览器中的盒模型有什么不同
-###IE 8 the following versions of the browser box model What is the difference
+### IE 8以下版本的浏览器中的盒模型有什么不同
+### IE 8 the following versions of the browser box model What is the difference
 
     IE8以下浏览器的盒模型中定义的元素的宽高不包括内边距和边框
     
     The following box model IE8 browser's width and height defined elements does not include padding and border
 
-###DOM操作——怎样添加、移除、移动、复制、创建和查找节点。 
-###DOM manipulation - how to add, remove, move, copy, create, and find nodes.
+### DOM操作——怎样添加、移除、移动、复制、创建和查找节点。 
+### DOM manipulation - how to add, remove, move, copy, create, and find nodes.
 
     （1）创建新节点
     
@@ -645,8 +645,8 @@ Clear float several ways:
 
           getElementById () // by elemental Id, uniqueness
 
-###html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
-###What's new html5, removing those elements? How to deal with a new label HTML5 browser compatibility problems? How to distinguish between HTML and HTML5?
+### html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
+### What's new html5, removing those elements? How to deal with a new label HTML5 browser compatibility problems? How to distinguish between HTML and HTML5?
 
     * HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
     
@@ -975,14 +975,14 @@ JavaScript中的作用域与变量声明提升？
 
 其他问题？
 -----
-###你遇到过比较难的技术问题是？你是如何解决的？
+### 你遇到过比较难的技术问题是？你是如何解决的？
 
 
-###列举IE 与其他浏览器不一样的特性？
+### 列举IE 与其他浏览器不一样的特性？
 
 
 
-###什么叫优雅降级和渐进增强？
+### 什么叫优雅降级和渐进增强？
 
     优雅降级：Web站点在所有新式浏览器中都能正常工作，如果用户使用的是老式浏览器，则代码会检查以确认它们是否能正常工作。由于IE独特的盒模型布局问题，针对不同版本的IE的hack实践过优雅降级了,为那些无法支持功能的浏览器增加候选方案，使之在旧式浏览器上以某种形式降级体验却不至于完全失效.
     
@@ -990,7 +990,7 @@ JavaScript中的作用域与变量声明提升？
 
 详见：[css学习归纳总结（一）][6]
 
-###WEB应用从服务器主动推送Data到客户端有那些方式？
+### WEB应用从服务器主动推送Data到客户端有那些方式？
 
 Javascript数据推送
 
@@ -1003,7 +1003,7 @@ Javascript数据推送
 
 
 
-###对前端界面工程师这个职位是怎么样理解的？它的前景会怎么样？
+### 对前端界面工程师这个职位是怎么样理解的？它的前景会怎么样？
 
     前端是最贴近用户的程序员，比后端、数据库、产品经理、运营、安全都近。
         1、实现界面交互
@@ -1109,6 +1109,7 @@ javascript继承的6种方法
     6，寄生组合式继承
 
 详情：[JavaScript继承方式详解][9]
+
 ajax过程
 ------
 
@@ -1137,7 +1138,8 @@ ajax过程
 
 前端安全问题？
 -------
-###sql注入原理
+
+### sql注入原理
 
 就是通过把`SQL`命令插入到`Web`表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。
 
@@ -1148,13 +1150,13 @@ ajax过程
     3.永远不要使用管理员权限的数据库连接，为每个应用使用单独的权限有限的数据库连接。
     4.不要把机密信息明文存放，请加密或者hash掉密码和敏感的信息。
 
-###XSS原理及防范
+### XSS原理及防范
 
 `Xss(cross-site scripting)`攻击指的是攻击者往Web页面里插入恶意`html`标签或者`javascript`代码。比如：攻击者在论坛中放一个
 看似安全的链接，骗取用户点击后，窃取cookie中的用户私密信息；或者攻击者在论坛中加一个恶意表单，
 当用户提交表单的时候，却把信息传送到攻击者的服务器中，而不是用户原本以为的信任站点。
 
-###XSS防范方法
+### XSS防范方法
 
 1.代码里对用户输入的地方和变量都需要仔细检查长度和对`”<”,”>”,”;”,”’”`等字符做过滤；其次任何内容写到页面之前都必须加以`encode`，避免不小心把`html tag` 弄出来。这一个层面做好，至少可以堵住超过一半的`XSS` 攻击。
 <br/>
@@ -1163,7 +1165,7 @@ ajax过程
 <br/>
 4.尽量采用POST 而非GET 提交表单
 
-###XSS与CSRF有什么区别吗？
+### XSS与CSRF有什么区别吗？
 
 `XSS`是获取信息，不需要提前知道其他用户页面的代码和数据包。`CSRF`是代替用户完成指定的动作，需要知道其他用户页面的代码和数据包。
 
@@ -1172,7 +1174,7 @@ ajax过程
 　　1.登录受信任网站A，并在本地生成Cookie。
 　　2.在不登出A的情况下，访问危险网站B。
 
-###CSRF的防御
+### CSRF的防御
 
 1.服务端的CSRF方式方法很多样，但总的思想都是一致的，就是在客户端页面增加伪随机数。
 2.使用验证码
@@ -1220,7 +1222,7 @@ Flash、Ajax各自的优缺点，在使用中如何取舍？
 这里的同源策略指的是：协议，域名，端口相同，同源策略是一种安全协议。
 指一段脚本只能读取来自同一来源的窗口和文档的属性。
 
-###为什么要有同源限制？
+### 为什么要有同源限制？
    我们举例说明：比如一个黑客程序，他利用`Iframe`把真正的银行登录页面嵌到他的页面上，当你使用真实的用户名，密码登录时，他的页面就可以通过`Javascript`读取到你的表单中`input`中的内容，这样用户名，密码就轻松到手了。
 
 
@@ -1285,7 +1287,7 @@ GET和POST的区别，何时使用POST？
        
        4、不要在嵌入的JS中调用运行时间较长的函数，如果一定要用，可以用`setTimeout`来调用
 
-###Javascript无阻塞加载具体方式
+### Javascript无阻塞加载具体方式
 
  - **将脚本放在底部。**`<link>`还是放在`head`中，用以保证在`js`加载前，能加载出正常显示的页面。`<script>`标签放在`</body>`前。
  - **成组脚本**：由于每个`<script>`标签下载时阻塞页面解析过程，所以限制页面的`<script>`总数也可以改善性能。适用于内联脚本和外部脚本。
@@ -1551,14 +1553,14 @@ js操作获取和设置cookie
     }
 
  
-###说说TCP传输的三次握手策略
+### 说说TCP传输的三次握手策略
 
 	为了准确无误地把数据送达目标处，TCP协议采用了三次握手策略。用TCP协议把数据包送出去后，TCP不会对传送  后的情况置之不理，它一定会向对方确认是否成功送达。握手过程中使用了TCP的标志：SYN和ACK。
 	发送端首先发送一个带SYN标志的数据包给对方。接收端收到后，回传一个带有SYN/ACK标志的数据包以示传达确认信息。最后，发送端再回传一个带ACK标志的数据包，代表“握手”结束
 	若在握手过程中某个阶段莫名中断，TCP协议会再次以相同的顺序发送相同的数据包。
 
 
-###说说你对Promise的理解
+### 说说你对Promise的理解
 
 依照 `Promise/A+` 的定义，`Promise` 有四种状态：
 
@@ -1590,34 +1592,34 @@ js操作获取和设置cookie
 接收两个函数作为参数，一个在 `fulfilled` 的时候被调用，一个在 `rejected` 的时候被调用，接收参数就是 `future，onFulfilled` 对应 `resolve`, `onRejected` 对应 `reject`。
 
 
-##Javascript垃圾回收方法
+## Javascript垃圾回收方法
 
-###标记清除（mark and sweep）
+### 标记清除（mark and sweep）
 
 
 这是`JavaScript`最常见的垃圾回收方式，当变量进入执行环境的时候，比如函数中声明一个变量，垃圾回收器将其标记为“进入环境”，当变量离开环境的时候（函数执行结束）将其标记为“离开环境”。
 
 垃圾回收器会在运行的时候给存储在内存中的所有变量加上标记，然后去掉环境中的变量以及被环境中变量所引用的变量（闭包），在这些完成之后仍存在标记的就是要删除的变量了
 
-###引用计数(reference counting)
+### 引用计数(reference counting)
 
 在低版本`IE`中经常会出现内存泄露，很多时候就是因为其采用引用计数方式进行垃圾回收。引用计数的策略是跟踪记录每个值被使用的次数，当声明了一个 变量并将一个引用类型赋值给该变量的时候这个值的引用次数就加1，如果该变量的值变成了另外一个，则这个值得引用次数减1，当这个值的引用次数变为0的时 候，说明没有变量在使用，这个值没法被访问了，因此可以将其占用的空间回收，这样垃圾回收器会在运行的时候清理掉引用次数为0的值占用的空间。
 
 在IE中虽然`JavaScript`对象通过标记清除的方式进行垃圾回收，但BOM与DOM对象却是通过引用计数回收垃圾的，也就是说只要涉及BOM及DOM就会出现循环引用问题。
 
-###谈谈性能优化问题
+### 谈谈性能优化问题
 
 代码层面：避免使用css表达式，避免使用高级选择器，通配选择器。
 缓存利用：缓存Ajax，使用CDN，使用外部js和css文件以便缓存，添加Expires头，服务端配置Etag，减少DNS查找等
 请求数量：合并样式和脚本，使用css图片精灵，初始首屏之外的图片资源按需加载，静态资源延迟加载。
 请求带宽：压缩文件，开启GZIP，
 
-###移动端性能优化
+### 移动端性能优化
 
 >尽量使用`css3`动画，开启硬件加速。适当使用`touch`事件代替`click`事件。避免使用`css3`渐变阴影效果。
 >尽可能少的使用`box-shadow`与`gradients`。`box-shadow`与`gradients`往往都是页面的性能杀手
 
-##什么是Etag？
+## 什么是Etag？
 
 浏览器下载组件的时候，会将它们存储到浏览器缓存中。如果需要再次获取相同的组件，浏览器将检查组件的缓存时间，
 假如已经过期，那么浏览器将发送一个条件GET请求到服务器，服务器判断缓存还有效，则发送一个304响应，
@@ -1625,7 +1627,7 @@ js操作获取和设置cookie
 
 那么服务器是根据什么判断缓存是否还有效呢?答案有两种方式，一种是前面提到的ETag，另一种是根据`Last-Modified`
 
-###Expires和Cache-Control
+### Expires和Cache-Control
 
 `Expires`要求客户端和服务端的时钟严格同步。HTTP1.1引入`Cache-Control`来克服Expires头的限制。如果max-age和Expires同时出现，则max-age有更高的优先级。
 
@@ -1635,20 +1637,20 @@ js操作获取和设置cookie
     Pragma: private
     Last-Modified: $now // RFC1123 format
 
-###栈和队列的区别?
+### 栈和队列的区别?
 
     栈的插入和删除操作都是在一端进行的，而队列的操作却是在两端进行的。
     队列先进先出，栈先进后出。
     栈只允许在表尾一端进行插入和删除，而队列只允许在表尾一端进行插入，在表头一端进行删除 
 
-###栈和堆的区别？
+### 栈和堆的区别？
 
     栈区（stack）—   由编译器自动分配释放   ，存放函数的参数值，局部变量的值等。
     堆区（heap）   —   一般由程序员分配释放，   若程序员不释放，程序结束时可能由OS回收。
     堆（数据结构）：堆可以被看成是一棵树，如：堆排序；
     栈（数据结构）：一种先进后出的数据结构。 
 
-###关于Http 2.0 你知道多少？
+### 关于Http 2.0 你知道多少？
 
 `HTTP/2`引入了“服务端推（serverpush）”的概念，它允许服务端在客户端需要数据之前就主动地将数据发送到客户端缓存中，从而提高性能。
 `HTTP/2`提供更多的加密支持
